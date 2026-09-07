@@ -1,0 +1,22 @@
+{
+  "_howToEdit": [
+    "This file holds the special events shown on the Events page.",
+    "Add one { } block per event inside the \"events\" list below.",
+    "date  — required, always YYYY-MM-DD (year-month-day).",
+    "time  — shown on the right of the card, e.g. \"5:00 PM\" or \"5:00 & 7:00 PM\".",
+    "title — the event name.",
+    "note  — optional one-line description.",
+    "Put a comma after every block EXCEPT the last one.",
+    "Weekly Sunday and Wednesday gatherings are automatic — do not add them here.",
+    "Past events disappear from the list on their own; you can leave or delete them."
+  ],
+  "_example": {
+    "date": "2026-12-24",
+    "time": "5:00 & 7:00 PM",
+    "title": "Christmas Eve Service",
+    "note": "Candlelight, carols, and a message of hope."
+  },
+
+  "events": [
+  ]
+}

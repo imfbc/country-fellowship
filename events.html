@@ -206,9 +206,8 @@
       { dow: 3, time: "6:00 PM",  title: "Prayer Meeting" }
     ];
 
-    const SPECIAL_EVENTS = [
-      // add special events here
-    ];
+    /* Special events are edited in events.json — no need to touch this file. */
+    let SPECIAL_EVENTS = [];
 
     const MONTHS = ["January","February","March","April","May","June",
                     "July","August","September","October","November","December"];
@@ -326,6 +325,17 @@
     });
 
     render();
+
+    fetch("events.json", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || !Array.isArray(data.events)) return;
+        SPECIAL_EVENTS = data.events.filter(function (e) {
+          return e && /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.title;
+        });
+        render();
+      })
+      .catch(function () { /* keep the weekly gatherings on screen */ });
   </script>
 
   <script>
