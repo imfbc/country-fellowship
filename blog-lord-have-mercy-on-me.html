@@ -23,7 +23,7 @@
     .post-wrap ul { margin: 0 0 1.4rem 1.25rem; }
     .post-wrap li { font-size: 1.02rem; line-height: 1.85; color: #374151; margin-bottom: .5rem; }
     .post-nav { max-width: 720px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .post-nav a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .post-nav a { color: var(--accent-dark); font-weight: 600; font-size: .9rem; text-decoration: none; }
     .post-nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -35,11 +35,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -68,7 +68,7 @@
   <section class="post-body">
     <div class="container">
       <article class="post-wrap">
-        <img src="images/blog/lord-have-mercy-on-me.jpg" alt="Lord Have Mercy on Me" class="post-hero-img">
+        <img src="images/blog/lord-have-mercy-on-me.jpg" alt="Lord Have Mercy on Me" class="post-hero-img" loading="lazy" decoding="async" width="499" height="262">
         <p>There is a little prayer in Luke 18 that you may recognize. A crowd was following Jesus, and a blind man sitting by the side of the road started crying out, “<b>Lord Jesus, have mercy on me.</b>” The crowd tried to quiet him, but he persisted. Jesus called the man to him, restored his sight, and the man began to follow Jesus and to glorify God.</p>
           <p>Dr. Ed Young Sr. says, “This little prayer, The Jesus Prayer,” is something you can pray 50, 60, 100 times a day. Just a little prayer: “Lord Jesus, have mercy on me.”</p>
           <p>This prayer will prepare you to pray longer, to study longer. Whatever you are doing, wherever you are going, this simple prayer will give you a sense of God’s presence and help set your mind on biblical truth.</p>
@@ -76,7 +76,7 @@
           <p>p.s. We will be updating our Website and Facebook page in the next two weeks.</p>
       </article>
       <div class="post-nav">
-        <a href="blog.html">&larr; Back to all posts</a>
+        <a href="blog.html"><span aria-hidden="true">&larr;</span> Back to all posts</a>
       </div>
     </div>
   </section>

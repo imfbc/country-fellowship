@@ -37,7 +37,7 @@
       transition: border-color .2s, box-shadow .2s, transform .2s;
     }
     .blog-card:hover {
-      border-color: var(--accent);
+      border-color: var(--accent-dark);
       box-shadow: 0 6px 24px rgba(5,150,105,.1);
       transform: translateY(-3px);
     }
@@ -59,7 +59,7 @@
     .post-date {
       font-size: 0.75rem;
       font-weight: 600;
-      color: var(--accent);
+      color: var(--accent-dark);
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
@@ -67,7 +67,7 @@
       font-size: 0.7rem;
       font-weight: 600;
       background: var(--accent-tint);
-      color: var(--accent);
+      color: var(--accent-dark);
       padding: 0.2rem 0.65rem;
       border-radius: 20px;
       text-transform: uppercase;
@@ -93,7 +93,7 @@
       gap: 0.35rem;
       font-size: 0.85rem;
       font-weight: 600;
-      color: var(--accent);
+      color: var(--accent-dark);
       text-decoration: none;
     }
     .read-more:hover { text-decoration: underline; }
@@ -103,7 +103,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      background: var(--accent);
+      background: var(--accent-solid);
       color: #fff;
       padding: 0.25rem 0.7rem;
       border-radius: 4px;
@@ -123,11 +123,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -156,7 +156,7 @@
     <div class="container">
       <div class="blog-grid">
         <article class="blog-card">
-          <img src="images/blog/america-250.jpg" alt="America 250" class="card-img">
+          <img src="images/blog/america-250.jpg" alt="America 250" class="card-img" loading="lazy" decoding="async" width="500" height="349">
           <div>
             <span class="featured-label">Latest Post</span>
           <div class="post-meta">
@@ -165,74 +165,74 @@
           </div>
           <h2>America 250</h2>
           <p>Dear Country Fellowship Church Family , Psalm 11:3 asks, “If the foundations be destroyed, what can the righteous do?” This verse reflects a time when moral and societal principles—the…</p>
-          <a href="blog-america-250.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-america-250.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/mother-s-day.jpg" alt="Mother&#x27;s Day" class="card-img">
+          <img src="images/blog/mother-s-day.jpg" alt="Mother&#x27;s Day" class="card-img" loading="lazy" decoding="async" width="500" height="333">
           <div class="post-meta">
             <span class="post-date">May 10, 2026</span>
             <span class="post-tag">Family</span>
           </div>
           <h2>Mother&#x27;s Day</h2>
           <p>“God invented Guilt so Mothers could be everywhere at once.” Children were asked what is love? A little girl answered, “Love is when your mommy reads you a bedtime story. True love is when…</p>
-          <a href="blog-mother-s-day.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-mother-s-day.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/i-am-blessed.png" alt="I am blessed" class="card-img">
+          <img src="images/blog/i-am-blessed.png" alt="I am blessed" class="card-img" loading="lazy" decoding="async" width="500" height="500">
           <div class="post-meta">
             <span class="post-date">January 11, 2026</span>
             <span class="post-tag">Gratitude</span>
           </div>
           <h2>I am blessed</h2>
           <p>Years ago, Nancy &amp; I moved to Stephenville to start the Cowboy Church of Erath County. Within a few weeks we joined a Health Club. We met a young man named Donnie. Donnie was the trainer…</p>
-          <a href="blog-i-am-blessed.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-i-am-blessed.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/live-life-with-a-purpose.png" alt="Live Life with a Purpose" class="card-img">
+          <img src="images/blog/live-life-with-a-purpose.png" alt="Live Life with a Purpose" class="card-img" loading="lazy" decoding="async" width="498" height="281">
           <div class="post-meta">
             <span class="post-date">November 4, 2025</span>
             <span class="post-tag">Discipleship</span>
           </div>
           <h2>Live Life with a Purpose</h2>
           <p>A View of Life from St. Patrick: “I will say of the Lord, “HE is my refuge and my fortress, my God, in whom I trust.” Psalm 91:2 “God’s might to direct me, God’s power to protect me, God’s…</p>
-          <a href="blog-live-life-with-a-purpose.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-live-life-with-a-purpose.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/disciple-christian.jpg" alt="Disciple? Christian?" class="card-img">
+          <img src="images/blog/disciple-christian.jpg" alt="Disciple? Christian?" class="card-img" loading="lazy" decoding="async" width="500" height="273">
           <div class="post-meta">
             <span class="post-date">June 8, 2025</span>
             <span class="post-tag">Identity</span>
           </div>
           <h2>Disciple? Christian?</h2>
           <p>This last week, I read an article written by the Apologist, Dr. Jim Denison. The article was about navigating our Cultural Moment. He asked the question, “Are you a “ Christian ” or a “…</p>
-          <a href="blog-disciple-christian.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-disciple-christian.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/by-god-god-is-god.png" alt="By God…God is God" class="card-img">
+          <img src="images/blog/by-god-god-is-god.png" alt="By God…God is God" class="card-img" loading="lazy" decoding="async" width="500" height="281">
           <div class="post-meta">
             <span class="post-date">May 25, 2025</span>
             <span class="post-tag">Theology</span>
           </div>
           <h2>By God…God is God</h2>
           <p>Archie Bunker, played by the late Carroll O’Connor, claimed to know a little about theology. Here is a sketch about Archie finding a glimpse of God that was real: Archie Bunker was…</p>
-          <a href="blog-by-god-god-is-god.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-by-god-god-is-god.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="blog-card">
-          <img src="images/blog/lord-have-mercy-on-me.jpg" alt="Lord Have Mercy on Me" class="card-img">
+          <img src="images/blog/lord-have-mercy-on-me.jpg" alt="Lord Have Mercy on Me" class="card-img" loading="lazy" decoding="async" width="499" height="262">
           <div class="post-meta">
             <span class="post-date">May 11, 2025</span>
             <span class="post-tag">Prayer</span>
           </div>
           <h2>Lord Have Mercy on Me</h2>
           <p>There is a little prayer in Luke 18 that you may recognize. A crowd was following Jesus, and a blind man sitting by the side of the road started crying out, “ Lord Jesus, have mercy on me.…</p>
-          <a href="blog-lord-have-mercy-on-me.html" class="read-more">Read more &rarr;</a>
+          <a href="blog-lord-have-mercy-on-me.html" class="read-more">Read more <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>

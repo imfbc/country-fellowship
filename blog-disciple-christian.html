@@ -23,7 +23,7 @@
     .post-wrap ul { margin: 0 0 1.4rem 1.25rem; }
     .post-wrap li { font-size: 1.02rem; line-height: 1.85; color: #374151; margin-bottom: .5rem; }
     .post-nav { max-width: 720px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .post-nav a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .post-nav a { color: var(--accent-dark); font-weight: 600; font-size: .9rem; text-decoration: none; }
     .post-nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -35,11 +35,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -68,7 +68,7 @@
   <section class="post-body">
     <div class="container">
       <article class="post-wrap">
-        <img src="images/blog/disciple-christian.jpg" alt="Disciple? Christian?" class="post-hero-img">
+        <img src="images/blog/disciple-christian.jpg" alt="Disciple? Christian?" class="post-hero-img" loading="lazy" decoding="async" width="500" height="273">
         <p>This last week, I read an article written by the Apologist, Dr. Jim Denison. The article was about navigating our Cultural Moment.</p>
           <p>He asked the question, “Are you a “<b><i>Christian</i></b>” or a “<b><i>Disciple</i></b>”? The word “<b><i>Christian</i></b>” is found in the New Testament three times (Acts 11;26; 26:38; I Peter 4:16) The word <b><i>Disciple</i></b> is found <b>261 times</b> in the Gospels and the Book of Acts.</p>
           <p>What is a <b><i>Disciple</i></b>? The title of “<b><i>Disciple</i></b>” in the ancient world was an apprentice to a great teacher, someone that followed a master and would initiate there way of life. “Follow me, and I will make you fishers of men.” (Mt. 4:19) Those early <b><i>Disciples</i></b> would let down their nets and followed Jesus. So being a <i><b>Disciple</b></i> is more than trusting Christ as Savior it is also applying our faith in Him to our daily lives. Denison pointed out that the Greatest need in America is for the Christian to be a <i><b>Disciple</b></i>- a person who follow Jesus courageously imitating His Teachings. <i><b>Disciples</b></i> follow Jesus and become Salt to a tasteless Culture. <i><b>Disciples</b></i> follow Jesus and become Light to a Dark World. (Mathew 5:13-16) John Mark Comer writes: “Jesus is not looking for converts to Christianity: He’s looking for apprentices in the kingdom of God.” Lord helps us to be <i><b>Disciples</b></i> and follow you.”</p>
@@ -76,7 +76,7 @@
           <p><b>Celebrate Father’s Day with us this next Sunday! We have a gift for Dad’s next Sunday</b><br>&nbsp;<br>Blessings!</p>
       </article>
       <div class="post-nav">
-        <a href="blog.html">&larr; Back to all posts</a>
+        <a href="blog.html"><span aria-hidden="true">&larr;</span> Back to all posts</a>
       </div>
     </div>
   </section>

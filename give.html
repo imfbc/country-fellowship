@@ -18,7 +18,7 @@
     .give-text p { font-size: .975rem; color: #6b7280; line-height: 1.85; margin-bottom: 1rem; }
     .verse-block { background: var(--black); color: #fff; border-radius: 14px; padding: 2rem; margin-top: 2rem; }
     .verse-block blockquote { font-size: 1.05rem; line-height: 1.75; font-style: italic; margin-bottom: .75rem; }
-    .verse-block cite { font-size: .75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; font-style: normal; }
+    .verse-block cite { font-size: .75rem; font-weight: 700; color: var(--accent-dark); text-transform: uppercase; letter-spacing: .1em; font-style: normal; }
     .give-iframe-wrap { border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 32px rgba(0,0,0,.08); background: #fff; }
     .give-iframe-wrap iframe { display: block; width: 100%; border: none; }
     @media (max-width:800px) { .give-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
@@ -32,11 +32,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>

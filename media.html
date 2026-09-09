@@ -17,9 +17,9 @@
     .latest-hero { background: #1c1c1c; padding: 3.5rem 0; }
     .latest-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 3rem; align-items: center; }
     .latest-text { color: #fff; }
-    .latest-label { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:var(--accent); display:block; margin-bottom:.75rem; }
+    .latest-label { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color: var(--accent-dark); display:block; margin-bottom:.75rem; }
     .latest-title { font-size:1.5rem; font-weight:700; line-height:1.25; margin-bottom:.5rem; }
-    .latest-date { font-size:.85rem; color:#9ca3af; }
+    .latest-date { font-size:.85rem; color: var(--gray-mid); }
     .latest-player { position:relative; padding-bottom:56.25%; height:0; border-radius:10px; overflow:hidden; }
     .latest-player iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
     @media (max-width:700px) { .latest-inner { grid-template-columns:1fr; } }
@@ -30,13 +30,13 @@
     .library-section p.lead { font-size: .975rem; color: #6b7280; line-height: 1.7; margin-bottom: 2.25rem; }
     .sermon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 1rem; }
     .sermon-btn { text-align: left; font: inherit; cursor: pointer; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.2rem; transition: border-color .2s, box-shadow .2s, transform .2s; }
-    .sermon-btn:hover { border-color: var(--accent); box-shadow: 0 6px 20px rgba(5,150,105,.1); transform: translateY(-2px); }
-    .sermon-btn[aria-current="true"] { border-color: var(--accent); background: var(--accent-tint); }
-    .sermon-btn .s-date { display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: .3rem; }
+    .sermon-btn:hover { border-color: var(--accent-dark); box-shadow: 0 6px 20px rgba(5,150,105,.1); transform: translateY(-2px); }
+    .sermon-btn[aria-current="true"] { border-color: var(--accent-dark); background: var(--accent-tint); }
+    .sermon-btn .s-date { display: block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent-dark); margin-bottom: .3rem; }
     .sermon-btn .s-title { display: block; font-size: .95rem; font-weight: 600; color: var(--black); }
     .archive-more { display: block; margin: 2.25rem auto 0; background: none; border: 1px solid var(--border); border-radius: 10px; padding: .8rem 1.9rem; font: inherit; font-weight: 600; font-size: .875rem; color: var(--black); cursor: pointer; transition: border-color .2s, background .2s; }
-    .archive-more:hover { border-color: var(--accent); background: var(--accent-tint); }
-    .archive-count { text-align: center; font-size: .8rem; color: #9ca3af; margin-top: .9rem; }
+    .archive-more:hover { border-color: var(--accent-dark); background: var(--accent-tint); }
+    .archive-count { text-align: center; font-size: .8rem; color: var(--gray-mid); margin-top: .9rem; }
   </style>
 </head>
 <body>
@@ -47,11 +47,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -81,7 +81,7 @@
     <div class="container">
       <div class="latest-inner">
         <div class="latest-text">
-          <span class="latest-label">▶ Most Recent</span>
+          <span class="latest-label"><span aria-hidden="true">▶</span> Most Recent</span>
           <p class="latest-title">Most Recent Message</p>
           <p class="latest-date">Country Fellowship Church · Bryan, TX</p>
         </div>
@@ -223,7 +223,8 @@
       grid.querySelectorAll('[aria-current="true"]')
           .forEach(function (b) { b.removeAttribute("aria-current"); });
       btn.setAttribute("aria-current", "true");
-      document.querySelector(".latest-hero").scrollIntoView({ behavior: "smooth", block: "start" });
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      document.querySelector(".latest-hero").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
     }
 
     function renderMore() {

@@ -23,7 +23,7 @@
     .post-wrap ul { margin: 0 0 1.4rem 1.25rem; }
     .post-wrap li { font-size: 1.02rem; line-height: 1.85; color: #374151; margin-bottom: .5rem; }
     .post-nav { max-width: 720px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .post-nav a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .post-nav a { color: var(--accent-dark); font-weight: 600; font-size: .9rem; text-decoration: none; }
     .post-nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -35,11 +35,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -68,7 +68,7 @@
   <section class="post-body">
     <div class="container">
       <article class="post-wrap">
-        <img src="images/blog/live-life-with-a-purpose.png" alt="Live Life with a Purpose" class="post-hero-img">
+        <img src="images/blog/live-life-with-a-purpose.png" alt="Live Life with a Purpose" class="post-hero-img" loading="lazy" decoding="async" width="498" height="281">
         <p>A View of Life from St. Patrick: “I will say of the Lord, “HE is my refuge and my fortress, my God, in whom I trust.” Psalm 91:2</p>
           <p>“God’s might to direct me, God’s power to protect me, God’s wisdom for learning, God’s eye for discerning, God’s ear for hearing, God’s word for my clearing" - St. Patrick</p>
           <p>As a youth, Patrick was captured by pirates and sold as a slave. After six years of servitude, he escaped and returned to his home. He would then begin his ministry of Christianizing his homeland of Ireland. Ireland then became a center of Christian influence throughout Europe. The trials that Patrick molded him to become a victorious Believer and Evangelist. &nbsp;God is still in the business of using believers. We just need to allow Him to mold us; make us and use us. &nbsp;What will God have you to do at home, church and in your workplace of life? Live life with a Purpose! &nbsp;</p>
@@ -79,7 +79,7 @@
           <p>Monday Morning, November 3rd @10:00 a.m. in the Large Fellowship Hall- Christmas Shoebox Packing Party. In the Large Fellowship Hall.</p>
       </article>
       <div class="post-nav">
-        <a href="blog.html">&larr; Back to all posts</a>
+        <a href="blog.html"><span aria-hidden="true">&larr;</span> Back to all posts</a>
       </div>
     </div>
   </section>

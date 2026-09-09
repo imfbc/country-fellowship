@@ -23,7 +23,7 @@
     .post-wrap ul { margin: 0 0 1.4rem 1.25rem; }
     .post-wrap li { font-size: 1.02rem; line-height: 1.85; color: #374151; margin-bottom: .5rem; }
     .post-nav { max-width: 720px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .post-nav a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .post-nav a { color: var(--accent-dark); font-weight: 600; font-size: .9rem; text-decoration: none; }
     .post-nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -35,11 +35,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -68,7 +68,7 @@
   <section class="post-body">
     <div class="container">
       <article class="post-wrap">
-        <img src="images/blog/america-250.jpg" alt="America 250" class="post-hero-img">
+        <img src="images/blog/america-250.jpg" alt="America 250" class="post-hero-img" loading="lazy" decoding="async" width="500" height="349">
         <p><b>Dear Country Fellowship Church Family</b>, <br>Psalm 11:3 asks, “If the foundations be destroyed, what can the righteous do?” This verse reflects a time when moral and societal principles—the foundations of justice and truth—are under attack, leaving the righteous to face uncertainty and danger.</p>
           <p><b>On the 4th &amp; 5th of July America is 250 years old. Churches throughout our Nation are encouraged to celebrate the 250th Anniversary and Call believers to renewal and prayer.</b> Franklin Graham warned that while America was born through struggle 250 years ago, the nation remains in a spiritual struggle today. He expressed concern about the country’s future, saying, “I don’t think we’ll make it another 25 years without God’s intervention.” Encouraging believers to participate, Graham urged people to join the daily prayer effort and seek God’s guidance for the nation during what he sees as a critical moment in America’s history.</p>
           <p><b>This Sunday July 5th, Churches are encouraged to call the people to a Spiritual Renewal and Revival.</b> The Only way that America can be Great Again, is through personal repentance. &nbsp;As your pastor, I challenge us to get back to claiming the promise of God in 2 Chronicles 7:14, "If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land."</p>
@@ -76,7 +76,7 @@
           <p><b>See You on Sunday- Pastor Charles</b></p>
       </article>
       <div class="post-nav">
-        <a href="blog.html">&larr; Back to all posts</a>
+        <a href="blog.html"><span aria-hidden="true">&larr;</span> Back to all posts</a>
       </div>
     </div>
   </section>

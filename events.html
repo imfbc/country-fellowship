@@ -21,16 +21,16 @@
       background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem;
       transition: border-color .2s, box-shadow .2s, transform .2s;
     }
-    .event-item:hover { border-color: var(--accent); box-shadow: 0 6px 24px rgba(5,150,105,.1); transform: translateY(-2px); }
+    .event-item:hover { border-color: var(--accent-dark); box-shadow: 0 6px 24px rgba(5,150,105,.1); transform: translateY(-2px); }
     .event-date-box { text-align: center; background: var(--accent-tint); border-radius: 8px; padding: .75rem .5rem; }
-    .event-month { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); display: block; }
+    .event-month { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent-dark); display: block; }
     .event-day { font-size: 1.75rem; font-weight: 700; color: var(--black); line-height: 1; }
     .event-info h3 { font-size: 1.05rem; font-weight: 700; color: var(--black); margin-bottom: .35rem; }
     .event-info p { font-size: .875rem; color: #6b7280; line-height: 1.65; }
-    .event-time { font-size: .8rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+    .event-time { font-size: .8rem; font-weight: 600; color: var(--accent-dark); white-space: nowrap; }
     .recurring-badge {
       display: inline-block; font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
-      background: var(--accent-tint); color: var(--accent); padding: .2rem .6rem; border-radius: 20px; margin-bottom: .5rem;
+      background: var(--accent-tint); color: var(--accent-dark); padding: .2rem .6rem; border-radius: 20px; margin-bottom: .5rem;
     }
     /* Calendar */
     .cal-wrap { margin: 2.5rem 0 3.5rem; }
@@ -38,29 +38,29 @@
     .cal-month { font-size: 1.15rem; font-weight: 700; color: var(--black); letter-spacing: -.01em; }
     .cal-nav { display: flex; gap: .5rem; }
     .cal-nav button { width: 36px; height: 36px; border: 1px solid var(--border); background: #fff; border-radius: 8px; cursor: pointer; font-size: 1rem; color: var(--black); line-height: 1; transition: border-color .2s, background .2s; }
-    .cal-nav button:hover { border-color: var(--accent); background: var(--accent-tint); }
+    .cal-nav button:hover { border-color: var(--accent-dark); background: var(--accent-tint); }
     .cal-today-btn { width: auto !important; padding: 0 .85rem; font-size: .8rem !important; font-weight: 600; }
     .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
-    .cal-dow { text-align: center; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #9ca3af; padding-bottom: .5rem; }
+    .cal-dow { text-align: center; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--gray-mid); padding-bottom: .5rem; }
     .cal-day { position: relative; min-height: 84px; border: 1px solid var(--border); border-radius: 8px; background: #fff; padding: .4rem .45rem; text-align: left; font: inherit; cursor: default; overflow: hidden; }
     .cal-day.is-outside { background: var(--bg-light); border-color: transparent; }
     .cal-day.is-outside .cal-daynum { color: #d1d5db; }
-    .cal-day.is-today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .cal-day.is-today { border-color: var(--accent-dark); box-shadow: 0 0 0 1px var(--accent); }
     .cal-daynum { font-size: .78rem; font-weight: 600; color: var(--black); }
-    .cal-day.is-today .cal-daynum { color: var(--accent); }
+    .cal-day.is-today .cal-daynum { color: var(--accent-dark); }
     .cal-ev { display: block; font-size: .62rem; line-height: 1.3; margin-top: .22rem; padding: .12rem .3rem; border-radius: 4px; background: var(--accent-tint); color: var(--accent-dark, #047857); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .cal-ev.is-special { background: #eef2ff; color: #4338ca; }
-    .cal-more { font-size: .6rem; color: #9ca3af; margin-top: .18rem; display: block; }
+    .cal-more { font-size: .6rem; color: var(--gray-mid); margin-top: .18rem; display: block; }
     .cal-legend { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.1rem; font-size: .78rem; color: #6b7280; }
     .cal-legend span { display: inline-flex; align-items: center; gap: .4rem; }
     .cal-swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
-    .cal-empty { color: #9ca3af; font-size: .9rem; padding: 1rem 0; }
+    .cal-empty { color: var(--gray-mid); font-size: .9rem; padding: 1rem 0; }
     @media (max-width: 700px) {
       .cal-day { min-height: 62px; padding: .3rem; }
       .cal-ev { font-size: 0; padding: 0; height: 5px; width: 5px; border-radius: 50%; margin-top: .3rem; display: inline-block; margin-right: 3px; }
       .cal-more { display: none; }
     }
-    .section-divider { margin: 3rem 0 2rem; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #9ca3af; }
+    .section-divider { margin: 3rem 0 2rem; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--gray-mid); }
     @media (max-width:640px) { .event-item { grid-template-columns: 60px 1fr; } .event-time { display: none; } }
   </style>
 </head>
@@ -72,11 +72,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>

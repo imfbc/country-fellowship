@@ -26,12 +26,12 @@
       font-family: 'Inter', system-ui, sans-serif; font-size: .875rem; color: var(--black);
       background: var(--bg-light); outline: none; transition: border-color .2s;
     }
-    .form-row input:focus, .form-row textarea:focus { border-color: var(--accent); background: #fff; }
+    .form-row input:focus, .form-row textarea:focus { border-color: var(--accent-dark); background: #fff; }
     .form-row textarea { min-height: 140px; resize: vertical; }
     .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .form-submit { width: 100%; background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: .85rem; font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s; }
+    .form-submit { width: 100%; background: var(--accent-solid); color: #fff; border: none; border-radius: 8px; padding: .85rem; font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s; }
     .form-submit:hover { background: #047857; }
-    .form-note { font-size: .75rem; color: #9ca3af; margin-top: .75rem; text-align: center; }
+    .form-note { font-size: .75rem; color: var(--gray-mid); margin-top: .75rem; text-align: center; }
     @media (max-width: 700px) { .prayer-grid { grid-template-columns: 1fr; gap: 2rem; } .form-row-2 { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -43,11 +43,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>

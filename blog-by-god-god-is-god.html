@@ -23,7 +23,7 @@
     .post-wrap ul { margin: 0 0 1.4rem 1.25rem; }
     .post-wrap li { font-size: 1.02rem; line-height: 1.85; color: #374151; margin-bottom: .5rem; }
     .post-nav { max-width: 720px; margin: 0 auto; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .post-nav a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+    .post-nav a { color: var(--accent-dark); font-weight: 600; font-size: .9rem; text-decoration: none; }
     .post-nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -35,11 +35,11 @@
         <img src="https://graph.facebook.com/CountryFellowship/picture?type=large" alt="Country Fellowship Church Logo" style="width:42px;height:42px;object-fit:cover;display:block;flex-shrink:0;border-radius:50%;">
         <span class="logo-text">Country Fellowship<small>Church · Bryan, TX</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li class="has-drop">
-          <a href="about.html">About ▾</a>
+          <a href="about.html">About <span aria-hidden="true">▾</span></a>
           <ul class="drop-menu">
             <li><a href="about.html#mission">Mission &amp; Vision</a></li>
             <li><a href="about.html#beliefs">What We Believe</a></li>
@@ -68,7 +68,7 @@
   <section class="post-body">
     <div class="container">
       <article class="post-wrap">
-        <img src="images/blog/by-god-god-is-god.png" alt="By God…God is God" class="post-hero-img">
+        <img src="images/blog/by-god-god-is-god.png" alt="By God…God is God" class="post-hero-img" loading="lazy" decoding="async" width="500" height="281">
         <p>Archie Bunker, played by the late Carroll O’Connor, claimed to know a little about theology. Here is a sketch about Archie finding a glimpse of God that was real: Archie Bunker was experiencing double trouble. He was laid off from his job and to make matters worse he had to have gall bladder surgery. At home recuperating, Edith his wife, and his son-in-law, Mike (Meathead) was trying to give him some encouraging words. &nbsp;Times were now better for Mike and his wife Gloria. Mike had graduated from the University, had a good paying job and a little baby boy named Joey. Mike writes out a check for 1,500.00 to Archie and tells him that it is a gift. Archie says, “<i>I ain’t going to be a Moocher from my relatives.</i>” Archie then proceeds to tear up the check. And then Mike leaves the room.</p>
           <p>In the next scene, Archie begins to talk to Edith about God caring for him. He tells her that he is a pretty good Christian. He tells here that while other men have been unfaithful to their wives and had good times, he instead stayed home. Then he says, “I don’t understand it why God does not care for me.”</p>
           <p>Edith replies, “<i>Now Archie you better not talk like that. Didn’t God bring you through the surgery?</i>” Archie goes on to tell her that God did help him, but he still would have to pay over 600.00 out of the pocket expenses for surgery.</p>
@@ -79,7 +79,7 @@
           <p>Philippians 1:6</p>
       </article>
       <div class="post-nav">
-        <a href="blog.html">&larr; Back to all posts</a>
+        <a href="blog.html"><span aria-hidden="true">&larr;</span> Back to all posts</a>
       </div>
     </div>
   </section>
